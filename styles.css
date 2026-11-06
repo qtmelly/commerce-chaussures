@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --couleur-gris: #69707d;
+  --couleur-orange: #ff7e1b;
+  --couleur-transparen: 0px 20px 50px -20px #ff7e1b;
+  --couleur-blanc-clair: #f6f8fd;
+  --couleur-noir: #1d2026;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.carte-principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8px 0;
+  gap: 100px;
+}
+
+.carte-chaussure {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  gap: 30px;
+}
+
+.chaussures {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.carte-prix {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 50%;
+}
+
+h3 {
+  color: var(--couleur-gris);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1.2;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 44px;
+}
+
+.petit-texte {
+  color: var(--couleur-gris);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.reduction {
+  display: flex;
+
+  justify-content: space-between;
+  width: 35%;
+}
+
+.pourcentage {
+  background-color: var(--couleur-noir);
+  color: #fff;
+  padding: 4px 6px;
+  border-radius: 5px;
+  height: 18px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+h4 {
+  margin-top: -18px;
+  color: var(--couleur-gris);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.add {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.combien {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  background-color: var(--couleur-blanc-clair);
+  width: 40%;
+  gap: 30px;
+  border-radius: 10px;
+}
+
+.ajouter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 50%;
+  margin-top: 40px;
+  background-color: var(--couleur-orange);
+  padding: 16px 16px;
+  border-radius: 10px;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.ajouter:hover {
+  background-color: 0px 20px 50px -20px #ff7e1b;
+}
