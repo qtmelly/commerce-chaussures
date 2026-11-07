@@ -8,7 +8,7 @@
 :root {
   --couleur-gris: #69707d;
   --couleur-orange: #ff7e1b;
-  --couleur-transparen: 0px 20px 50px -20px #ff7e1b;
+  --couleur-orange-clair: #ffab6a;
   --couleur-blanc-clair: #f6f8fd;
   --couleur-noir: #1d2026;
 }
@@ -99,18 +99,31 @@ h4 {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  gap: 16px;
 }
 
 .combien {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 40px;
   background-color: var(--couleur-blanc-clair);
   width: 40%;
   gap: 30px;
+
   border-radius: 10px;
+}
+
+.moinsplus {
+  background: none;
+  border: none;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ff7e1b;
+  cursor: pointer;
+  transition: opacity 0.2s;
 }
 
 .ajouter {
@@ -127,5 +140,14 @@ h4 {
 }
 
 .ajouter:hover {
-  background-color: 0px 20px 50px -20px #ff7e1b;
+  background-color: var(--couleur-orange-clair);
+  box-shadow: 0px 20px 50px -20px #ff7e1b;
+}
+
+.moinsplus:hover {
+  opacity: 0.5;
+}
+
+.chaussures img:hover {
+  opacity: 0.5;
 }
